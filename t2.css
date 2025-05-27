@@ -1,0 +1,62 @@
+body {
+  font-family: Arial, sans-serif;
+  background: rgb(158, 189, 247);
+  padding: 20px;
+}
+
+.container {
+  max-width: 400px;
+  margin: 12pc ;
+  background: #585bff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(0, 0, 0);
+  margin-right: 15pc;
+}
+
+.input-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background: #a16542;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 4px;
+}
+
+li.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.remove-btn {
+  background: red;
+  color: white;
+  border: none;
+  padding: 5px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
