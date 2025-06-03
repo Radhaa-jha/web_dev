@@ -1,0 +1,87 @@
+:root {
+            --primary-color: #3498db;
+            --error-color: #e74c3c;
+            --success-color: #2ecc71;
+            --border-radius: 4px;
+            --transition-speed: 0.3s;
+        }
+
+        /* Form Structure */
+        .form-container {
+            max-width: 600px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: #333;
+        }
+
+        /* Input Styling */
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: var(--border-radius);
+            font-family: inherit;
+            font-size: 1rem;
+            transition: border-color var(--transition-speed);
+        }
+
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+        }
+
+        /* Validation States */
+        .error input, .error textarea {
+            border-color: var(--error-color);
+        }
+
+        .success input, .success textarea {
+            border-color: var(--success-color);
+        }
+
+        /* Messages */
+        .error-message {
+            color: var(--error-color);
+            font-size: 0.85rem;
+            margin-top: 0.5rem;
+            display: none;
+        }
+
+        .success-message {
+            background-color: var(--success-color);
+            color: white;
+            padding: 1rem;
+            border-radius: var(--border-radius);
+            margin-top: 1rem;
+            display: none;
+        }
+
+        /* Button */
+        .submit-btn {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 1rem;
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            transition: background-color var(--transition-speed);
+        }
+
+        .submit-btn:hover {
+            background-color: #2980b9;
+        }
