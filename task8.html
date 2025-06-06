@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Blog document</title>
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Custom styles */
+        .navbar {
+            box-shadow: 0 2px 4px rgba(0,0,0,.1);
+        }
+        .card {
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        footer {
+            background-color: #f8f9fa;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top mb-4">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-primary" href="#">BlogSite</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+        <div class="row mb-4">
+            <div class="col-12">
+                <h1 class="display-5 fw-bold">Latest Blog Posts</h1>
+                <p class="text-muted">Discover our most recent articles</p>
+            </div>
+        </div>
+
+        <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://media.licdn.com/dms/image/v2/D4D12AQF3PKE9bBKVRA/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1684847066360?e=2147483647&v=beta&t=F9de79G7jLt48ZLUWJRALULYbhgVch9ToEHMSzxYsAU" class="card-img-top" alt="Blog post image">
+                    <div class="card-body">
+                        <span class="badge bg-primary mb-2">Technology</span>
+                        <h5 class="card-title">The Future of Web Development</h5>
+                        <p class="card-text text-muted">Exploring the latest trends and technologies that are shaping the future of web development in 2023 and beyond.</p>
+                        <a href="#" class="btn btn-outline-primary">Read More</a>
+                    </div>
+                    <div class="card-footer bg-transparent">
+                        <small class="text-muted">Published 3 days ago</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://www.orientsoftware.com/Themes/Content/Images/blog/2022-05-17/ui-ux-best-practices.jpg" class="card-img-top" alt="Blog post image">
+                    <div class="card-body">
+                        <span class="badge bg-success mb-2">Design</span>
+                        <h5 class="card-title">UI/UX Best Practices</h5>
+                        <p class="card-text text-muted">Learn the essential UI/UX design principles that will help you create more engaging and user-friendly interfaces.</p>
+                        <a href="#" class="btn btn-outline-success">Read More</a>
+                    </div>
+                    <div class="card-footer bg-transparent">
+                        <small class="text-muted">Published 1 week ago</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://startupsavant.com/images/startup-culture/articles/success-stories.jpg" class="card-img-top" alt="Blog post image">
+                    <div class="card-body">
+                        <span class="badge bg-warning text-dark mb-2">Business</span>
+                        <h5 class="card-title">Startup Success Stories</h5>
+                        <p class="card-text text-muted">Inspiring stories of successful startups and the lessons we can learn from their journeys to success.</p>
+                        <a href="#" class="btn btn-outline-warning">Read More</a>
+                    </div>
+                    <div class="card-footer bg-transparent">
+                        <small class="text-muted">Published 2 weeks ago</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://miro.medium.com/v2/resize:fit:1400/0*nIp1qOLSydDrqQqT" class="card-img-top" alt="Blog post image">
+                    <div class="card-body">
+                        <span class="badge bg-danger mb-2">Programming</span>
+                        <h5 class="card-title">JavaScript Frameworks Comparison</h5>
+                        <p class="card-text text-muted">A comprehensive comparison of popular JavaScript frameworks to help you choose the right one for your project.</p>
+                        <a href="#" class="btn btn-outline-danger">Read More</a>
+                    </div>
+                    <div class="card-footer bg-transparent">
+                        <small class="text-muted">Published 3 weeks ago</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://www.syntacticsinc.com/wp-content/uploads/2023/10/Syntactics-OMT-December-Digital-Marketing-Trends-for-2023_-Top-10-Picks-1024x576.jpg" class="card-img-top" alt="Blog post image">
+                    <div class="card-body">
+                        <span class="badge bg-info text-dark mb-2">Marketing</span>
+                        <h5 class="card-title">Digital Marketing Trends 2023</h5>
+                        <p class="card-text text-muted">Stay ahead of the curve with these emerging digital marketing trends that are dominating 2023.</p>
+                        <a href="#" class="btn btn-outline-info">Read More</a>
+                    </div>
+                    <div class="card-footer bg-transparent">
+                        <small class="text-muted">Published 1 month ago</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://d2ds8yldqp7gxv.cloudfront.net/Blog+Explanatory+Images/remote+working+methods+3.webp" class="card-img-top" alt="Blog post image">
+                    <div class="card-body">
+                        <span class="badge bg-secondary mb-2">Productivity</span>
+                        <h5 class="card-title">Remote Work Strategies</h5>
+                        <p class="card-text text-muted">Effective strategies to maintain productivity and work-life balance in a remote work environment.</p>
+                        <a href="#" class="btn btn-outline-secondary">Read More</a>
+                    </div>
+                    <div class="card-footer bg-transparent">
+                        <small class="text-muted">Published 1 month ago</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>About BlogSite</h5>
+                    <p class="text-muted">A platform for sharing knowledge and insights about technology, design, business, and more.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <h5>Connect With Us</h5>
+                    <div class="social-icons mt-3">
+                        <a href="#" class="text-decoration-none me-3"><i class="fab fa-facebook-f fa-lg"></i></a>
+                        <a href="#" class="text-decoration-none me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-decoration-none me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="text-decoration-none me-3"><i class="fab fa-linkedin-in fa-lg"></i></a>
+                        <a href="#" class="text-decoration-none"><i class="fab fa-github fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="mb-0 text-muted">&copy; 2023 BlogSite. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-decoration-none me-3 text-muted">Privacy Policy</a>
+                    <a href="#" class="text-decoration-none me-3 text-muted">Terms of Service</a>
+                    <a href="#" class="text-decoration-none text-muted">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle with Popper CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
